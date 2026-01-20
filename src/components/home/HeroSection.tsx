@@ -1,12 +1,22 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, type Variants } from 'framer-motion';
+
+interface Particle {
+  width: number;
+  height: number;
+  left: number;
+  top: number;
+  y: number;
+  x: number;
+  duration: number;
+}
 
 const HeroSection = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true });
-  const [particles, setParticles] = useState([]);
+  const [particles, setParticles] = useState<Particle[]>([]);
   
   // Generate particles hanya di client
   useEffect(() => {
@@ -34,7 +44,7 @@ const HeroSection = () => {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 40, opacity: 0 },
     visible: {
       y: 0,
@@ -47,7 +57,7 @@ const HeroSection = () => {
     }
   };
 
-  const imageVariants = {
+  const imageVariants: Variants = {
     hidden: { scale: 0, rotate: -180 },
     visible: {
       scale: 1,

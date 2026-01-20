@@ -1,12 +1,22 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Github, Linkedin, Instagram, Mail, Coffee, Heart } from 'lucide-react';
+
+interface Particle {
+  width: number;
+  height: number;
+  left: number;
+  top: number;
+  y: number;
+  x: number;
+  duration: number;
+}
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [particles, setParticles] = useState([]);
+  const [particles, setParticles] = useState<Particle[]>([]);
   
   useEffect(() => {
     setParticles(
@@ -80,7 +90,7 @@ const Footer = () => {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
