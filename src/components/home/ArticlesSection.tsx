@@ -1,11 +1,22 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Sparkles, Code, Palette, Rocket } from 'lucide-react';
 
+interface BackgroundParticle {
+  width: number;
+  height: number;
+  left: number;
+  top: number;
+  y: number;
+  x: number;
+  duration: number;
+  gradient: string;
+}
+
 const ArticlesSection = () => {
-  const [backgroundParticles, setBackgroundParticles] = useState([]);
+  const [backgroundParticles, setBackgroundParticles] = useState<BackgroundParticle[]>([]);
 
   // Generate particles hanya di client
   useEffect(() => {
@@ -70,13 +81,13 @@ const ArticlesSection = () => {
     }
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { y: 50, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         damping: 12,
         stiffness: 100
       }
