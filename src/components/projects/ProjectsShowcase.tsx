@@ -51,7 +51,7 @@ const projects = {
       image: '/robot.jpeg',
       tags: ['Robotik', 'Embedded System', 'Kontrol', 'Kompetisi'],
       liveUrl: 'https://youtu.be/38EABrCGsgc?si=4M3PDVnw6fjil_sw',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/zhafif05/ROBOCO-DARJO.git',
       gradient: 'from-orange-500 to-yellow-500'
     }
   ],
@@ -65,7 +65,7 @@ const projects = {
       tags: ['Arduino', 'RFID', 'IoT'],
       category: 'iot',
       liveUrl: 'https://youtube.com/shorts/tr9p7oaX5UM?si=mIBBheYfq6kvadKq',
-      githubUrl: 'https://github.com/yourusername/tol-otomatis-iot'
+      githubUrl: 'https://github.com/zhafif05/tol-otomatis-iot'
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ const projects = {
       tags: ['Arduino', 'Sensor Suhu', 'IoT'],
       category: 'iot',
       liveUrl: 'https://youtube.com/shorts/BpL013KEiek?si=FigyCwPDpSma23Ot',
-      githubUrl: 'https://github.com/yourusername/kipas-otomatis-iot'
+      githubUrl: 'https://github.com/zhafif05/kipas-otomatis-iot'
     },
     {
       id: 7,
@@ -95,7 +95,7 @@ const projects = {
       tags: ['Laravel', 'HTML', 'CSS', 'MySQL'],
       category: 'web',
       liveUrl: '#',
-      githubUrl: 'https://github.com/yourusername/website-toko'
+      githubUrl: 'https://github.com/zhafif05/website-toko'
     },
     {
       id: 8,
@@ -115,7 +115,7 @@ const projects = {
       tags: ['AI', 'Gemini API', 'Spotify API'],
       category: 'web',
       liveUrl: '#',
-      githubUrl: 'https://github.com/yourusername/rekomendasi-lagu-ai'
+      githubUrl: 'https://github.com/vaiozaffana/moodyfai_frontend.git'
     },{
       id: 10,
       title: 'Robot Panen Bandeng – ROBOCO DARJO',
@@ -124,7 +124,7 @@ const projects = {
       tags: ['Robotik', 'Embedded System', 'Kontrol', 'Kompetisi'],
       category: 'iot',
       liveUrl: 'https://youtu.be/38EABrCGsgc?si=4M3PDVnw6fjil_sw',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/zhafif05/ROBOCO-DARJO.git',
       gradient: 'from-orange-500 to-yellow-500'
     }
   ]
